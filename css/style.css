@@ -213,7 +213,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8px;
+  gap: 14px;
   background-color: var(--color-white);
 }
 
@@ -255,6 +255,54 @@ strong {
   height: 19px;
   border-radius: 50%;
   margin-right: 8px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.caption {
+  overflow: hidden;
+}
+
+.bottom-post h5 {
+  color: var(--color-text-grey);
+  cursor: pointer;
+}
+
+.post-reply {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-reply ion-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.send-reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.send-reply input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.send-reply h5 {
+  color: #b2dffc;
+  transition: 300ms;
+}
+
+.send-reply h5:hover {
+  color: #0095f6;
+  transition: 300ms;
+}
+.reply {
+  width: 100%;
+  max-height: 32px;
 }
 .sidebar {
   width: 293px;
@@ -373,6 +421,7 @@ strong {
 
 @media (max-width: 614px) {
   .top-post img,
+  .post img,
   .post,
   .column-post,
   .stories-box,
@@ -404,6 +453,11 @@ strong {
     background-color: transparent;
     border: none;
     margin-bottom: 5px;
+  }
+
+  .post > img {
+    width: 100vw;
+    height: auto;
   }
 
   .bottom-mobile {
