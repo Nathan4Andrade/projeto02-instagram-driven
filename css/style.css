@@ -13,13 +13,12 @@
 
 body {
   display: flex;
-  justify-content: column;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
+  background-color: var(--background-body);
 }
 header {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -99,7 +98,6 @@ main {
   justify-content: space-between;
 }
 .stories-box {
-  background-color: purple;
   width: 614px;
   height: 118px;
   display: flex;
@@ -203,7 +201,6 @@ main {
   height: 32px;
   margin-right: 11px;
   border-radius: 50%;
-  background-color: green;
   cursor: pointer;
 }
 
@@ -303,6 +300,11 @@ strong {
 .reply {
   width: 100%;
   max-height: 32px;
+}
+
+.sidediv {
+  position: relative;
+  width: 321px;
 }
 .sidebar {
   width: 293px;
@@ -410,7 +412,14 @@ strong {
   display: none;
 }
 
+/* @media (max-width: 1150px) {
+  .sidebar {
+    width: calc(51% - 293px);
+  }
+} */
+
 @media (max-width: 935px) {
+  .sidediv,
   .sidebar {
     display: none;
   }
@@ -428,8 +437,10 @@ strong {
   main {
     width: 100%;
   }
-  .top,
   .arrow {
+    display: none;
+  }
+  .top {
     display: none;
   }
   .top-mobile {
