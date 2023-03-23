@@ -428,7 +428,8 @@ strong {
   main {
     width: 100%;
   }
-  .top {
+  .top,
+  .arrow {
     display: none;
   }
   .top-mobile {
